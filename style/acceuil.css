@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style du logo cliquable */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 80px;
+    height: auto;
+    transition: opacity 0.3s ease;
+    text-decoration: none; /* Enlever la barre sous le logo */
+}
+
+/* Style du footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* Style de la navigation */
+ul {
+    margin: 150px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 400px;
+    text-align: center;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+/* Style des liens de navigation sans barre */
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Ajout d'une transition pour l'effet */
+}
+
+/* Effet de survol sur les liens */
+a:hover {
+    color: #666666; /* Change la couleur du texte */
+    transform: translateY(-5px); /* Déplace légèrement le texte vers le haut */
+}
+
+/* Retirer l'effet de la barre sous les liens */
+a:after {
+    content: none; /* Supprimer la barre sous tous les liens */
+}
+
+/* Style du texte cliquable "Hisaé Portfolio" */
+.portfolio-title {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet de survol sur le titre */
+.portfolio-title:hover {
+    color: #666666; /* Change la couleur au survol */
+    transform: translateY(-3px); /* Déplace légèrement le texte vers le haut */
+}
+
+/* Media Query pour l'adaptation aux petits écrans */
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}

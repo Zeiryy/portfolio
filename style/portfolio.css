@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.portfolio-container {
+    position: relative;  /* Important pour positionner les éléments à l'intérieur */
+    padding: 100px 50px; /* Marges pour laisser de l'espace autour */
+}
+
+/* Image 1 - Placée à droite avec de l'espace à gauche pour du texte */
+.image1 img {
+    width: 550px;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    top: -50px;   /* Ajuste la position en fonction de l'endroit où tu veux l'image */
+    left: 50%;    /* Placée à 60% de la largeur de la page, ce qui la place à droite */
+    position: absolute;
+}
+
+/* Texte à côté de l'image 1 */
+.text1 {
+    position: absolute;
+    top: 150px;   /* Aligné avec l'image */
+    left: 10%;    /* Texte à gauche de l'image */
+    color: #fff;
+    width: 40%;
+}
+
+/* Image 2 - Placée au centre */
+.image2 img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    top: 2000px;  /* Positionne l'image plus bas */
+    left: 50%;   /* Centrée horizontalement */
+    position: absolute;
+}
+
+/* Texte à côté de l'image 2 */
+.text2 {
+    position: absolute;
+    top: 2000px;
+    left: 10%;
+    color: #fff;
+    width: 40%;
+}
+
+/* Image 3 - Placée à gauche avec du texte à droite */
+.image3 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    top: 1000px;  /* Positionne l'image encore plus bas */
+    left: 5%;     /* Placée à gauche */
+    position: absolute;
+}
+
+/* Texte à côté de l'image 3 */
+.text3 {
+    position: absolute;
+    top: 1000px;   /* Aligné avec l'image */
+    left: 55%;     /* Texte à droite de l'image */
+    color: #fff;
+    width: 40%;
+}
+
+/* Style du footer */
+footer {
+    position: fixed;      /* Fixe le footer en bas de l'écran */
+    bottom: 0;            /* Le place tout en bas de la fenêtre */
+    left: 0;              /* Aligne le footer sur la gauche */
+    width: 100%;          /* Prend toute la largeur de l'écran */
+    text-align: center;   /* Centré horizontalement */
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 10px 0;      /* Ajoute un peu de padding pour espacer le texte du bord */
+    background-color: #000; /* Optionnel : Ajoute un fond noir pour mieux le distinguer */
+}
